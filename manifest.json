@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Insomnia",
+  "version": "0.1.0",
+  "description": "Insomnia ensures your PC stays awake and alert. Lock your screen with Ctrl + L to prevent sleep mode. Release it with Ctrl + R or by navigating to another tab or focusing outside of the browser. By k10wl",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
