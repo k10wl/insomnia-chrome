@@ -11,12 +11,17 @@ document.addEventListener("readystatechange", function () {
 
   function onRelease() {
     console.log(NAME + ": released");
+
+    releaseAudio.currentTime = 0
     releaseAudio.play();
+
     wakeLock = null;
   }
 
   function onLock() {
     console.log(NAME + ": locked");
+
+    lockAudio.currentTime = 0
     lockAudio.play();
   }
 
